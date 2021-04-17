@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass.set('Main')
+}
+
+javafx {
+    // Specify path to locally built SDK
+    sdk = 'D:\\jfx\\build\\sdk'
+    modules = ['javafx.controls', 'javafx.fxml']
+}

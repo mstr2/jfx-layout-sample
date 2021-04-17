@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane xmlns="http://javafx.com/javafx" fitToWidth="true">
+    <stylesheets>
+        <URL value="@/styles.css"/>
+    </stylesheets>
+
+    <VBox spacing="40">
+        <padding>
+            <Insets topRightBottomLeft="24"/>
+        </padding>
+
+        <VBox styleClass="control-section">
+            <Label text="A set of baseline-aligned nodes"/>
+            <VBox>
+                <HBox alignment="BASELINE_CENTER" style="-fx-border-color: lightgray">
+                    <Circle radius="5" fill="red"/>
+                    <Label text="peristeronic" prefHeight="40" style="-fx-background-color: lightgreen"/>
+                    <Label text="octothorpe" style="-fx-background-color: lightcoral"/>
+                    <Rectangle width="10" height="20" fill="blue"/>
+                </HBox>
+                <TextFlow styleClass="code">
+                    <Text styleClass="symbol" text="&lt;"/>
+                    <Text styleClass="element" text="HBox"/>
+                    <Text styleClass="property" text=" alignment"/>
+                    <Text styleClass="property-text" text="=&quot;BASELINE_CENTER&quot;"/>
+                    <Text styleClass="symbol" text="&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="Circle"/>
+                    <Text styleClass="property" text=" radius"/>
+                    <Text styleClass="property-text" text="=&quot;5&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;peristeronic&quot;"/>
+                    <Text styleClass="property" text=" prefHeight"/>
+                    <Text styleClass="property-text" text="=&quot;40&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;octothorpe&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="Rectangle"/>
+                    <Text styleClass="property" text=" width"/>
+                    <Text styleClass="property-text" text="=&quot;10&quot;"/>
+                    <Text styleClass="property" text=" height"/>
+                    <Text styleClass="property-text" text="=&quot;20&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="&lt;"/>
+                    <Text styleClass="element" text="HBox"/>
+                    <Text styleClass="symbol" text="&gt;"/>
+                </TextFlow>
+            </VBox>
+        </VBox>
+
+        <VBox styleClass="control-section">
+            <Label text="Text aligns when it appears on different branches of the scene graph"/>
+            <VBox>
+                <HBox alignment="BASELINE_CENTER" style="-fx-border-color: lightgray">
+                    <Circle radius="5" fill="red"/>
+                    <VBox>
+                        <Rectangle width="20" height="20" fill="blue"/>
+                        <Label text="pluviophilic" style="-fx-background-color: lightcoral"/>
+                    </VBox>
+                    <VBox>
+                        <Label text="solitude" prefHeight="40" alignment="BOTTOM_LEFT" style="-fx-background-color: lightgreen"/>
+                        <Circle radius="5" fill="blue"/>
+                    </VBox>
+                    <Circle radius="5" fill="red"/>
+                </HBox>
+                <TextFlow styleClass="code">
+                    <Text styleClass="symbol" text="&lt;"/>
+                    <Text styleClass="element" text="HBox"/>
+                    <Text styleClass="property" text=" alignment"/>
+                    <Text styleClass="property-text" text="=&quot;BASELINE_CENTER&quot;"/>
+                    <Text styleClass="symbol" text="&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="Circle"/>
+                    <Text styleClass="property" text=" radius"/>
+                    <Text styleClass="property-text" text="=&quot;5&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Rectangle"/>
+                    <Text styleClass="property" text=" width"/>
+                    <Text styleClass="property-text" text="=&quot;20&quot;"/>
+                    <Text styleClass="property" text=" height"/>
+                    <Text styleClass="property-text" text="=&quot;20&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;pluviophilic&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;solitude&quot;"/>
+                    <Text styleClass="property" text=" prefHeight"/>
+                    <Text styleClass="property-text" text="=&quot;40&quot;"/>
+                    <Text styleClass="property" text=" alignment"/>
+                    <Text styleClass="property-text" text="=&quot;BOTTOM_LEFT&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Circle"/>
+                    <Text styleClass="property" text=" radius"/>
+                    <Text styleClass="property-text" text="=&quot;5&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="Circle"/>
+                    <Text styleClass="property" text=" radius"/>
+                    <Text styleClass="property-text" text="=&quot;5&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="&lt;"/>
+                    <Text styleClass="element" text="HBox"/>
+                    <Text styleClass="symbol" text="&gt;"/>
+                </TextFlow>
+            </VBox>
+        </VBox>
+
+        <VBox styleClass="control-section">
+            <TextFlow>
+                <Text text="prefBaseline" style="-fx-font-style: italic"/>
+                <Text text=" selects the preferred baseline"/>
+            </TextFlow>
+            <VBox>
+                <HBox alignment="BASELINE_CENTER" style="-fx-border-color: lightgray">
+                    <VBox alignment="TOP_RIGHT">
+                        <Label text="arcadian" style="-fx-background-color: lightcoral"/>
+                        <Label text="werifesteria" style="-fx-background-color: lightcoral"/>
+                    </VBox>
+                    <VBox>
+                        <Label text="solivagant" style="-fx-background-color: lightgreen"/>
+                        <Label text="monochopsis" prefBaseline="true" style="-fx-background-color: lightgreen"/>
+                    </VBox>
+                </HBox>
+                <TextFlow styleClass="code">
+                    <Text styleClass="symbol" text="&lt;"/>
+                    <Text styleClass="element" text="HBox"/>
+                    <Text styleClass="property" text=" alignment"/>
+                    <Text styleClass="property-text" text="=&quot;BASELINE_CENTER&quot;"/>
+                    <Text styleClass="symbol" text="&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;arcadian&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;werifesteria&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;solivagant&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="        &lt;"/>
+                    <Text styleClass="element" text="Label"/>
+                    <Text styleClass="property" text=" text"/>
+                    <Text styleClass="property-text" text="=&quot;monochopsis&quot;"/>
+                    <Text styleClass="property" text=" prefBaseline"/>
+                    <Text styleClass="property-text" text="=&quot;true&quot;"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="    &lt;"/>
+                    <Text styleClass="element" text="VBox"/>
+                    <Text styleClass="symbol" text="/&gt;&#10;"/>
+
+                    <Text styleClass="symbol" text="&lt;"/>
+                    <Text styleClass="element" text="HBox"/>
+                    <Text styleClass="symbol" text="&gt;"/>
+                </TextFlow>
+            </VBox>
+        </VBox>
+
+    </VBox>
+</ScrollPane>

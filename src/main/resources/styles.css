@@ -1,0 +1,28 @@
+.control-section {
+    -fx-spacing: 10;
+}
+
+.code {
+    -fx-padding: 10;
+    -fx-font-family: monospace;
+    -fx-font-size: 12;
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+    -fx-border-width: 0 1 1 1;
+}
+
+.symbol {
+    -fx-fill: black;
+}
+
+.element {
+    -fx-fill: #0033b3;
+}
+
+.property {
+    -fx-fill: #174ad4;
+}
+
+.property-text {
+    -fx-fill: #067d17;
+}
